@@ -14,3 +14,9 @@ Included :<br>
  - <b>generating_curves.sage</b><br>
  Computes a list of curves with efficient arithmetic, for which we can apply the four-dimensional GLV method. The list is stored in
  `GLV4_curves.txt`.
+
+- <b>primes.sage</b><br>
+File created by `generating_primes.sage`.
+
+- <b>GLV4_curves.txt</b><br>
+File created by `generating_curves.sage`.
