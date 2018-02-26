@@ -3,8 +3,7 @@ Generation of efficient four-dimensional GLV curves with high security (256-bit)
 
 4 files :
  
- - <b>tables_1_2_Smith.sage</b>
- 
+ - <b>tables_1_2_Smith.sage</b><br> 
  <i>Computes the tables 1 and 2 from Smith article.</i>
  
  - <b>thm_6_Smith.sage</b>
