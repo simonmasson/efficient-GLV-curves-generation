@@ -3,19 +3,19 @@ Generation of efficient four-dimensional GLV curves with high security (256-bit)
 
 4 files :
  
- - tables_1_2_Smith.sage
+ - <b>tables_1_2_Smith.sage</b>
  
- <i>Computes the tables 1 and 2 from Smith article </i>
+ <i>Computes the tables 1 and 2 from Smith article.</i>
  
- - thm_6_Smith.sage
+ - <b>thm_6_Smith.sage</b>
  
- Computes theorem 6 from Smith article
+ <i>Computes theorem 6 from Smith article.</i>
  
- - generating_primes.sage
+ - <b>generating_primes.sage</b>
  
- Computes a list of primes with efficient finite field arithmetic, and stores it in a file primes.sage.
+ <i>Computes a list of primes with efficient finite field arithmetic, and stores it in a file primes.sage.</i>
  
- - generating_curves.sage
+ - <b>generating_curves.sage</b>
  
- Computes a list of curves with efficient arithmetic, for which we can apply the four-dimensional GLV method. The list is stored in
- GLV4_curves.txt
+ <i>Computes a list of curves with efficient arithmetic, for which we can apply the four-dimensional GLV method. The list is stored in
+ GLV4_curves.txt.</i>
