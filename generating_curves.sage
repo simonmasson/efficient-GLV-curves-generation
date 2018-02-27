@@ -1,18 +1,6 @@
-KK.<x> = PolynomialRing(QQ)
-
-load('tables_1_2_Smith.sage')
-
-load('thm_6_Smith.sage')
+load('Hase_CM_curves.sage')
 
 from sage.rings.factorint import factor_trial_division
-
-def DefineReductionQCurve(p, d,s,Delta) :
-    if Delta == 'D':#d == 5 :
-        Delta = -1
-    [A,B] = get_hasegawa_reduction_coefficients(p, d, s, Delta)
-    if 4*A^3 + 27 *B^2 != 0 :
-        return [EllipticCurve(A.parent(), [A,B]), A, B]
-    return ['singular curve', A, B]
     
 def write_possible_curves(tables_s_Delta, file, p) :
     proof.arithmetic(false)
@@ -108,9 +96,14 @@ def write_possible_curves(tables_s_Delta, file, p) :
                             f.write(',')
                             f.write(str(D))
                             f.write('],\n')
-load('generating_primes.sage')
 
-#load('primes.sage')
+#####################################
+# if primes.sage is computed :
+load('primes.sage')
+
+# else :
+# load('generating_primes.sage')
+#####################################
 
 f=open("GLV4_curves.txt", "w")
 f.write('curves = [   ')
@@ -119,11 +112,11 @@ length = len(primes)
 for p in primes :
 	tt = cputime()
 	write_possible_curves(tables_s_Delta, f, p)
-	print cputime(tt)
+	print 'computed in ', cputime(tt), 's'
 	print i,'/', length, '\n'
 	i = i+1
 	
 f.write('   ]')
 f.close()
 
-print ' Warining ! Enlever la dernière virgule du fichier...'
+print ' Warining ! Remove the last comma in the file GLV4_curves.txt !'
