@@ -3,7 +3,7 @@ Generation of efficient four-dimensional GLV curves with high security (256-bit)
 
 ## How to use ?
 `sage : load('generating_curves.sage')`<br>
-NB : if you want to use different primes, just change the 102-th line with `primes = [my, new, primes]`.
+NB : if you want to use different primes, just change the line 102 of `generating_curves.sage` with `primes = [my, new, primes]`.
 
 ## Files description
  - <b>auxiliary_functions.sage</b><br> 
