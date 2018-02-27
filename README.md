@@ -22,7 +22,7 @@ NB : if you want to use other primes, just change the line 102 of `generating_cu
   `compute_Hase_CM_curves.sage` returns the list of (d, s, Delta) for which a CM Q-curve of degree d arises.
  
  - <b>generating_primes.sage</b><br> 
- Computes a list of primes with efficient finite field arithmetic, and stores it in a file `primes.sage`.
+ Computes a list of 256-bit primes with efficient finite field arithmetic, and stores it in a file `primes.sage`.
  
  - <b>generating_curves.sage</b><br>
  Computes a list of curves with efficient arithmetic, for which we can apply the four-dimensional GLV method. The list is stored in
