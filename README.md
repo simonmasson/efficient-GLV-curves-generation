@@ -1,7 +1,11 @@
 # Efficient GLV curves generation
 Generation of efficient four-dimensional GLV curves with high security (256-bit)
 
-Included :<br>
+## How to use ?
+`sage : load('generating_curves.sage')`<br>
+NB : if you want to use differents primes, just change the ??th line.
+
+## Files description
  - <b>auxiliary_functions.sage</b><br> 
  `separate_square_factors(r)` returns s and D such that r = s^2*D with s rational and D square-free.<br>
  `roots_d2(P)` returns the roots of a degree 2 polynomial.<br>
