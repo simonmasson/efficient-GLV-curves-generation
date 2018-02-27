@@ -10,7 +10,7 @@ NB : if you want to use different primes, just change the line 102 of `generatin
  `separate_square_factors(r)` returns s and D such that r = s^2*D with s rational and D square-free.<br>
  `roots_d2(P)` returns the roots of a degree 2 polynomial.<br>
  `get_hasegawa_j_inv(d)` returns the j-invariant of a Hasegawa Q-curve of degree d.<br>
- `get_hasegawa_reduction_coefficients(p, d, s, Delta)` returns A and B in GF(p^2) defining the Hasegawa
+ `get_hasegawa_reduction_coefficients(p, d, s, D)` returns A and B in GF(p^2) defining the Hasegawa
  curve y^2 = x^3 + A*x + B parametrized by s, d and Delta.
 
  - <b>CM_Q-curves.sage</b><br>
@@ -26,10 +26,10 @@ NB : if you want to use different primes, just change the line 102 of `generatin
  
  - <b>generating_curves.sage</b><br>
  Computes a list of curves with efficient arithmetic, for which we can apply the four-dimensional GLV method. The list is stored in
- `GLV4_curves.txt`.
+ `GLV4_curves.txt`. 
 
 - <b>primes.sage</b><br>
 File created by `generating_primes.sage`.
 
 - <b>GLV4_curves.txt</b><br>
-File created by `generating_curves.sage`.
+File created by `generating_curves.sage`. Each element of the list represents a curve, given in the form : `[p, A, B, order, N, [twists], Delta, d, s, D]` where the curve is given by E_{d, s, D} : y^2 = x^3 + A*x + B with A,B in F_{p^2} = F_p(sqrt(Delta)), #E = order, N|#E is prime, twists are the orders of the twists of E_{d, s, D}
