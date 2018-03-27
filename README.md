@@ -32,4 +32,4 @@ NB : if you want to use other primes, just change the line 102 of `generating_cu
 File created by `generating_primes.sage`.
 
 - <b>GLV4_curves.txt</b><br>
-File created by `generating_curves.sage`. Each element of the list represents a curve, given in the form : `[p, A, B, order, N, [twists], Delta, d, s, D]` where the curve is given by E_{d, s, D} : y^2 = x^3 + A*x + B with A,B in F_{p^2} = F_p(sqrt(Delta)), #E = order, N|#E is prime, twists are the orders of the twists of E_{d, s, D}
+File created by `generating_curves.sage`. Each element of the list represents a curve, given in the form : `[p, A, B, order, N, [twists], Delta, d, s, D]` where the curve is given by E_{d, s, D} : y^2 = x^3 + A*x + B with A,B in F_{p^2} = F_p(sqrt(Delta)), #E = order, N|#E is prime, and [twists] are the orders of the twists.
