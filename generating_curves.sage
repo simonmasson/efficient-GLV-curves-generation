@@ -81,8 +81,7 @@ def write_curve(cpt, file, p, A, B, order, N, twist_orders, E, d, s, D) :
 	
 #####################################
 # if primes.sage is computed :
-#load('primes.sage')
-primes = [2^255-19, 2^127-1]
+load('primes.sage')
 
 # else :
 # load('generating_primes.sage')
