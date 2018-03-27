@@ -87,8 +87,7 @@ load('primes.sage')
 # load('generating_primes.sage')
 #####################################
 
-#f=open("GLV4_curves.txt", "w")
-f=open("curves_test.txt", "w")
+#f=open("GLV4_curves.sage", "w")
 f.write('curves = [   ')
 cpt = 0
 length = len(primes)

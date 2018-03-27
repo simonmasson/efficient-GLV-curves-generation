@@ -30,17 +30,34 @@ def construct_prime_with_bits(n, size_word) :
     
 tt = cputime()
 
-P30 =  construct_prime_with_bits(256,30)
-P31 =  construct_prime_with_bits(256,31)
-P32 =  construct_prime_with_bits(256,32)
-
-P62 =  construct_prime_with_bits(256,62)
-P63 =  construct_prime_with_bits(256,63)
+u = cputime()
 P64 =  construct_prime_with_bits(256,64)
+print cputime(u)
+u = cputime()
+P63 =  construct_prime_with_bits(252,63)
+print cputime(u)
+u = cputime()
+P51 =  construct_prime_with_bits(255,51)
+print cputime(u)
+u = cputime()
+P52 =  construct_prime_with_bits(260,52)
+print cputime(u)
+u = cputime()
+P53 =  construct_prime_with_bits(265,53)
+print cputime(u)
+u = cputime()
+P32 =  construct_prime_with_bits(256,32)
+print cputime(u)
+u = cputime()
+P28 =  construct_prime_with_bits(252,28)
+print cputime(u)
+u = cputime()
+P26 =  construct_prime_with_bits(260,26)
+print cputime(u)
 
 print 'primes with bits built in ', cputime(tt), 'seconds.'
 
-primes = P30 + P31 + P32 + P62 + P63 + P64
+primes = P64 + P63 + P51 + P52 + P53 + P32 + P28 + P26
 
 def construct_prime_epsilon(n,window_e):
     Res = []
