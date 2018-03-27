@@ -55,6 +55,8 @@ def get_hasegawa_j_inv(d) :
     else :
         Q3.<sqrtD> = Q2.quo(sqrtD^2 - D)
     
+    # formulas given by Benjamin Smith.
+    # can be replaced by 1728 * 4*A^3/(4*A^3 + 27*B^2)
     if d == 2 :
         C = 9*(1+s*sqrtD)
         sC = 9*(1-s*sqrtD)
