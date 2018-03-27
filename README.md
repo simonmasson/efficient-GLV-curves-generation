@@ -3,7 +3,7 @@ Generation of efficient four-dimensional GLV curves with high security (256-bit)
 
 ## How to use ?
 `sage : load('generating_curves.sage')`<br>
-NB : if you want to use other primes, just change the line 102 of `generating_curves.sage` with `primes = [my, new, primes]`.
+NB : if you want to use other primes, just change the line 85 of `generating_curves.sage` with `primes = [my, new, primes]`.
 
 ## Files description
  - <b>auxiliary_functions.sage</b><br> 
@@ -25,8 +25,9 @@ NB : if you want to use other primes, just change the line 102 of `generating_cu
  Computes a list of 256-bit primes with efficient finite field arithmetic, and stores it in a file `primes.sage`.
  
  - <b>generating_curves.sage</b><br>
- Computes a list of curves with efficient arithmetic, for which we can apply the four-dimensional GLV method. The list is stored in
- `GLV4_curves.txt`. 
+ `get_possible_traces(p, Delta)` returns the list of the twisted curves traces for a given quadratic finite field F_{p^2} and a given endomorphisms algebra <b>Q</b>(√Δ).<br>
+ `get_curve_order_and_twist_orders(P, Q1, traces)` (Q1 = [p]P) return [a, L] where a is the order of the curve, and L is the list of the twisted curves orders.<br>
+ `write_curve(cpt, file, p, A, B, order, N, twist_orders, E, d, s, D)` write a new curve in file, for which  there is an efficient arithmetic, and for which we can apply the four-dimensional GLV method. The list is stored in `GLV4_curves.txt`. 
 
 - <b>primes.sage</b><br>
 File created by `generating_primes.sage`.
